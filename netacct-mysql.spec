@@ -47,11 +47,11 @@ i zczytuj±cy ruch.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sysconfdir}
+install -d $RPM_BUILD_ROOT{%{_sysconfdir},/etc/rc.d/init.d}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/etc/rc.d/init.d
 install contrib/nacctd.redhat $RPM_BUILD_ROOT/etc/rc.d/init.d/netacct-mysql
 
 %clean
