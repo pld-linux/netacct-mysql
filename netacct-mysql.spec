@@ -1,4 +1,4 @@
-Summary:	net-acct which work with MySQL 
+Summary:	net-acct which work with MySQL
 Summary(pl):	net-acct pracuj±cy z MySQL
 Name:		netacct-mysql
 Version:	0.76
@@ -13,8 +13,8 @@ Patch1:		%{name}-shared.patch
 URL:		http://netacct-mysql.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:  libpcap-devel
-BuildRequires:  mysql-devel
+BuildRequires:	libpcap-devel
+BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/netacct-mysql
