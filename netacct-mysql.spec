@@ -7,6 +7,7 @@ Epoch:		1
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://dl.sourceforge.net/netacct-mysql/netacct-mysql-0.75.tar.gz
+# Source0-md5:	c6ec7bfbd99d1fb392d5a43fae63f833
 Patch0:		%{name}-rcd.patch
 Patch1:		%{name}-shared.patch
 URL:		http://netacct-mysql.sourceforge.net/
