@@ -1,13 +1,13 @@
 Summary:	net-acct which work with MySQL 
 Summary(pl):	net-acct pracuj±cy z MySQL
 Name:		netacct-mysql
-Version:	0.75
+Version:	0.76
 Release:	0.2
 Epoch:		1
 License:	GPL
 Group:		Networking/Daemons
-Source0:	http://dl.sourceforge.net/netacct-mysql/netacct-mysql-0.75.tar.gz
-# Source0-md5:	c6ec7bfbd99d1fb392d5a43fae63f833
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	e8562d18b7b560887a96824cbc89a77f
 Patch0:		%{name}-rcd.patch
 Patch1:		%{name}-shared.patch
 URL:		http://netacct-mysql.sourceforge.net/
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc FAQ INSTALL CHANGES README README.upgrade TODO contrib/{mrta2netacct,nacctp*,upgrade*}
+%doc FAQ FAQ-bg.txt INSTALL README README.bg TODO contrib/{mrta2netacct,nacctp*}
 %attr(750,root,root) %{_sbindir}/*
 %attr(754,root,root) /etc/rc.d/init.d/*
 %dir %{_sysconfdir}
