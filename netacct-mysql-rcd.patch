@@ -1,0 +1,12 @@
+diff -uNr netacct-mysql-0.75.org/contrib/nacctd.redhat netacct-mysql-0.75/contrib/nacctd.redhat
+--- netacct-mysql-0.75.org/contrib/nacctd.redhat	Sat Sep 28 18:25:17 2002
++++ netacct-mysql-0.75/contrib/nacctd.redhat	Mon Mar 10 13:07:05 2003
+@@ -18,7 +18,7 @@
+ 
+ INITLOG_ARGS=""
+ 
+-nacctd=/usr/local/sbin/nacctd
++nacctd=/usr/sbin/nacctd
+ OPTIONS=""
+ RETVAL=0
+ 
