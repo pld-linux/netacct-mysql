@@ -4,11 +4,12 @@ Summary:	net-acct which work with mySQL
 Summary(pl):	net-acct pracujacy z mySQL
 Name:		netacct-mysql
 Version:	0.75
-Release:	0.1
+Release:	0.2
 Epoch:		1
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://telia.dl.sourceforge.net/sourceforge/netacct-mysql/netacct-mysql-0.75.tar.gz
+Patch0:		netacct-mysql-rcd.patch
 URL:		http://netacct-mysql.sourceforge.net/
 BuildRequires:  mysql-static
 BuildRequires:  libpcap-devel
@@ -28,7 +29,7 @@ ruch.
 
 %prep
 %setup -q
-
+%patch0 -p1
 %build
 %configure2_13 \
 	--prefix=/usr \
