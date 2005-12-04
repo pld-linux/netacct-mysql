@@ -6,7 +6,7 @@ Release:	0.2
 Epoch:		1
 License:	GPL
 Group:		Networking/Daemons
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/netacct-mysql/%{name}-%{version}.tar.gz
 # Source0-md5:	e8562d18b7b560887a96824cbc89a77f
 Patch0:		%{name}-rcd.patch
 Patch1:		%{name}-shared.patch
@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(750,root,root) %{_sbindir}/*
 %attr(754,root,root) /etc/rc.d/init.d/*
 %dir %{_sysconfdir}
-%attr(644,root,root) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/*
+%attr(644,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %{_mandir}/man8/*
