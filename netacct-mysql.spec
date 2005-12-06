@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(750,root,root) %{_sbindir}/*
 %attr(754,root,root) /etc/rc.d/init.d/*
 %dir %{_sysconfdir}
-%attr(644,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %{_mandir}/man8/*
