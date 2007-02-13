@@ -1,5 +1,5 @@
 Summary:	net-acct which work with MySQL
-Summary(pl.UTF-8):   net-acct pracujący z MySQL
+Summary(pl.UTF-8):	net-acct pracujący z MySQL
 Name:		netacct-mysql
 Version:	0.76
 Release:	0.2
